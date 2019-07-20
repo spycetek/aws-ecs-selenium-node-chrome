@@ -7,3 +7,5 @@ RUN sudo chmod +x /opt/bin/ecs_entry_point.sh
 
 RUN sudo apt update && \
     sudo apt install -y iproute2
+
+ENTRYPOINT ["/opt/bin/ecs_entry_point.sh"]
